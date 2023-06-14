@@ -83,7 +83,7 @@ public class CartAddItemPage extends JPanel {
                 Object value = bookTable.getValueAt(row, 0);
                 String str = value + ".jpg";
 
-                imageBook = new ImageIcon("./image/" + str);
+                imageBook = new ImageIcon("image/" + str);
                 imageBook.setImage(imageBook.getImage().getScaledInstance(250, 300, Image.SCALE_DEFAULT));
                 JLabel label = new JLabel(imageBook);
                 imagePanel.removeAll();
