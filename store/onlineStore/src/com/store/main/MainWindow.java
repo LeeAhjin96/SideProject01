@@ -140,13 +140,13 @@ public class MainWindow extends JFrame {
                     if (mCart.mCartCount == 0)
                         JOptionPane.showMessageDialog(bt6,
                                 "장바구니에 항목이 없습니다");
-                    else if (cartList.mSelectRow == 0) // Debugging
+                    else if (cartList.mSelectRow == -1) // Debugging
                         JOptionPane.showMessageDialog(bt6,
                                 "장바구니에서 삭제할 항목을 선택하세요");
                     else {
                         mCart.removeCart(cartList.mSelectRow);
                         // 장바구니에서 선택 항목 삭제하기
-                        cartList.mSelectRow = 0 ; // Debugging
+                        cartList.mSelectRow = -1 ; // Debugging
                     }
                 }
                 mPagePanel.add(
